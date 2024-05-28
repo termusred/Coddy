@@ -1,12 +1,15 @@
 import styled from "styled-components"
 import {User} from "react-feather"
 const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 `
 const Navbar = styled.div`
     display: flex;
-    width: 80%;
+    width: 70%;
     height: 8%;
     margin-top: 1rem;
     border-radius: 8px;
@@ -41,8 +44,34 @@ const CoinsText = styled.span`
     font-size: small;
     cursor: default;
 `
+const Testlar = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 90%;
+    height: 20rem;
+`
 const UserName = styled.span`
     font-weight: 600;
+`
+const Title = styled.span`
+    font-size: 2rem;
+`
+const Content = styled.div`
+    height: 90%;
+    width: 100%;
+`
+const Break = styled.span`
+    font-size: 2rem;
+`
+const UpperPart = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 20%;
+`
+const PathText =styled.span`
+    font-size: 1.4rem;
 `
 const Landing = () => {
     return(
@@ -57,6 +86,16 @@ const Landing = () => {
                     <User size={25}></User>
                 </UserCon>
             </Navbar>
+            <Testlar>
+                <UpperPart>
+                    <Title>Testlar</Title>
+                    <Break>|</Break>
+                    <PathText>Asosiy menyu > testlar</PathText>
+                </UpperPart>
+                <Content>
+
+                </Content>
+            </Testlar>
         </Container>
     )
 }

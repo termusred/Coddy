@@ -7,8 +7,8 @@ export const Light = {
             close:"4rem",
         },
         BaseLayout:{
-            open:"350px",
-            close:"10rem"
+            open:"200px",
+            close:"1rem"
         }
     },
     SideMenu:{
